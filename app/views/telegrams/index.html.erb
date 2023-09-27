@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Telegrams</h1>
+
+<div id="telegrams">
+  <% @telegrams.each do |telegram| %>
+    <%= render telegram %>
+    <p>
+      <%= link_to "Show this telegram", telegram %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New telegram", new_telegram_path %>
